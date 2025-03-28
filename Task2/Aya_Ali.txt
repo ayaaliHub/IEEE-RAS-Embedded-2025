@@ -1,0 +1,15 @@
+Task Summary: Problem-Solving Using Recursion
+Objective:
+The task involved solving multiple algorithmic problems using recursion. 
+The goal was to apply recursive thinking to break down problems into smaller subproblems and analyze the efficiency and limitations of recursion.
+
+Key Challenges Faced:
+Recursive Depth Issues: Some problems required deep recursion, leading to stack overflow for large inputs.
+
+Performance Optimization: Exponential time complexity in naive recursion required memoization or iterative solutions for efficiency.
+
+Edge Cases: Special cases (like N=1) needed additional handling to prevent incorrect outputs.
+
+
+//problem (8)
+عندي مشكله في حساب  length of the sequence.
