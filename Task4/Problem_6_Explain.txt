@@ -1,0 +1,62 @@
+
+
+************************************************************************First Printf**************************************************************
+//printf("Address of a is %p\nValue of aPtr is %p\n\n", &a, aPtr);
+
+>>>&a gives the address of the variable a.
+
+>>>aPtr holds the address of a since it was initialized with &a.
+
+
+//output for example
+Address of a is 0x7ffee9d34d2c
+Value of aPtr is 0x7ffee9d34d2c
+
+************************************************************************Second Printf**************************************************************
+//printf("Value of a is %d\nValue of *aPtr is %d\n\n", a, *aPtr);
+
+>>>a is the value of the variable a, which is 7.
+
+>>>*aPtr dereferences the pointer aPtr and gets the value stored at the address aPtr points to, which is the value of a (7).
+
+
+//output
+Value of a is 7
+Value of *aPtr is 7
+
+************************************************************************Third Printf**************************************************************
+//printf("Showing that * and & are complements of each other\n");
+printf("&*aPtr = %p\n*&aPtr = %p\n", &*aPtr, *&aPtr);
+
+>>>&*aPtr:
+
+*aPtr dereferences the pointer aPtr to get the value stored at the address it points to (i.e., a).
+
+&*aPtr then takes the address of that value. So, this expression effectively returns the address stored in aPtr (the address of a).
+
+
+>>>*&aPtr:
+
+&aPtr gets the address of the pointer aPtr (the memory location where aPtr is stored).
+
+* then dereferences that address to get the value stored at aPtr, which is the address of a.
+
+Therefore, *&aPtr gives the value stored at aPtr, which is the address of a.
+
+//output
+&*aPtr = 0x7ffee9d34d2c
+*&aPtr = 0x7ffee9d34d2c
+
+
+*******************************************overall OutPut********************************************
+
+Address of a is 0x7ffee9d34d2c
+Value of aPtr is 0x7ffee9d34d2c
+
+Value of a is 7
+Value of *aPtr is 7
+
+Showing that * and & are complements of each other
+&*aPtr = 0x7ffee9d34d2c
+*&aPtr = 0x7ffee9d34d2c
+
